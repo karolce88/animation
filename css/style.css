@@ -1,0 +1,1137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  font-size: 20px;
+  font-family: "Quantico", sans-serif;
+}
+
+.sky {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: royalblue;
+  -webkit-animation: sky-color 6s linear 4s 1 forwards;
+          animation: sky-color 6s linear 4s 1 forwards;
+}
+.sky .text-inform {
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  color: rgb(207, 207, 207);
+}
+.sky .text-inform::after {
+  content: "only for full screen desktop";
+}
+.sky .text-refresh {
+  position: absolute;
+  bottom: 10%;
+  right: -20%;
+  font-size: 30px;
+  color: rgb(207, 207, 207);
+  -webkit-animation: refresh 1s linear 14s 1 forwards;
+          animation: refresh 1s linear 14s 1 forwards;
+  z-index: 3;
+}
+.sky .text-refresh::after {
+  content: "refresh to restart";
+}
+.sky .start {
+  position: absolute;
+  top: -50%;
+  left: 23%;
+  font-size: 38px;
+  color: rgb(207, 207, 207);
+  -webkit-animation: start-text 1s linear 11s 1 forwards;
+          animation: start-text 1s linear 11s 1 forwards;
+  z-index: 2;
+}
+.sky .start span {
+  color: royalblue;
+  font-size: 120px;
+}
+.sky .earth {
+  position: absolute;
+  bottom: 0px;
+  height: 400px;
+  width: 100vw;
+  background-color: green;
+  -webkit-animation: fly 3s linear 4s 1 forwards;
+          animation: fly 3s linear 4s 1 forwards;
+}
+.sky .earth .cloud {
+  position: absolute;
+  width: 140px;
+  height: 80px;
+  top: -70%;
+  left: 87%;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+.sky .earth .cloud .cloud2 {
+  position: absolute;
+  width: 160px;
+  height: 100px;
+  top: 0%;
+  left: -60%;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+.sky .earth .cloud .cloud3 {
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  top: 20%;
+  left: -90%;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+.sky .earth .cloud-two {
+  top: -60%;
+  left: 10%;
+}
+.sky .earth .cloud-three {
+  top: -55%;
+  left: 25%;
+}
+.sky .earth .cloud-four {
+  top: -65%;
+  left: 70%;
+}
+.sky .earth .sun {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  right: 35%;
+  top: -85%;
+  box-shadow: 0px 0px 50px rgb(250, 235, 26);
+  background-color: rgb(250, 235, 26);
+}
+.sky .earth .house {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  right: 25%;
+  top: 20%;
+  background-color: rgba(216, 216, 216, 0.87);
+}
+.sky .earth .house .window {
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  background-color: rgba(14, 118, 255, 0.829);
+  border: 2px solid rgb(255, 255, 255);
+}
+.sky .earth .house .perpendicularly {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 45%;
+  background-color: rgb(255, 255, 255);
+}
+.sky .earth .house .horizontally {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 45%;
+  background-color: rgb(255, 255, 255);
+}
+.sky .earth .house .one {
+  position: absolute;
+  bottom: 16px;
+  left: 15px;
+}
+.sky .earth .house .two {
+  position: absolute;
+  bottom: 16px;
+  right: 15px;
+}
+.sky .earth .house .door {
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  width: 24px;
+  height: 45px;
+  background-color: rgb(80, 36, 36);
+  border: 2px solid rgb(43, 43, 43);
+}
+.sky .earth .house .door .handle {
+  position: absolute;
+  height: 2px;
+  width: 5px;
+  background-color: rgb(214, 214, 214);
+  top: 50%;
+}
+.sky .earth .house .roof {
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  top: -25px;
+  background-color: rgb(207, 0, 0);
+}
+.sky .earth .house .roof .himney {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  right: 20px;
+  top: -5px;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+.sky .earth .house .roof .himney::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  width: 14px;
+  height: 4px;
+  left: -2px;
+  top: -4px;
+}
+.sky .earth .house2 {
+  left: 5%;
+  top: -5%;
+}
+.sky .earth .house3 {
+  left: 85%;
+  top: -5%;
+}
+.sky .earth .house4 {
+  left: 15%;
+  top: 50%;
+}
+.sky .earth .house5 {
+  left: 97%;
+  top: 50%;
+}
+.sky .earth .house6 {
+  left: -2%;
+  top: 35%;
+}
+.sky .earth .lake {
+  position: absolute;
+  width: 180px;
+  height: 80px;
+  right: 35%;
+  bottom: 25%;
+  border-radius: 50%;
+  background-color: rgb(12, 145, 253);
+}
+.sky .earth .road {
+  position: absolute;
+  width: 100vw;
+  height: 60px;
+  bottom: 5%;
+  background-color: rgb(59, 58, 58);
+}
+.sky .earth .road .lane {
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  top: 48%;
+  background-color: #fff;
+}
+.sky .earth .road .lane2 {
+  top: 53%;
+}
+.sky .earth .three {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  top: 42%;
+  left: 63%;
+  background-color: rgb(92, 59, 59);
+}
+.sky .earth .three::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 55px;
+  top: -45px;
+  left: -14px;
+  border-radius: 50%;
+  background-color: rgb(16, 75, 14);
+}
+.sky .earth .three1 {
+  top: 38%;
+  left: 60%;
+}
+.sky .earth .three2 {
+  top: 45%;
+  left: 55%;
+}
+.sky .earth .three3 {
+  top: 60%;
+  left: 80%;
+}
+.sky .earth .three4 {
+  top: 54%;
+  left: 85%;
+}
+.sky .earth .three5 {
+  top: 5%;
+  left: 95%;
+}
+.sky .earth .three6 {
+  top: 2%;
+  left: 62%;
+}
+.sky .earth .three7 {
+  top: 20%;
+  left: 25%;
+}
+.sky .earth .three8 {
+  top: 15%;
+  left: 20%;
+}
+.sky .earth .three9 {
+  top: 25%;
+  left: 22%;
+}
+.sky .earth .three10 {
+  top: 38%;
+  left: 12%;
+}
+.sky .earth .three11 {
+  top: 30%;
+  left: 9%;
+}
+.sky .earth .bush {
+  position: absolute;
+  width: 50px;
+  height: 35px;
+  top: 60%;
+  left: 50%;
+  border-radius: 50%;
+  background-color: rgb(10, 80, 19);
+}
+.sky .earth .bush .bush2 {
+  position: absolute;
+  width: 50px;
+  height: 49px;
+  top: -40%;
+  left: -50%;
+  border-radius: 50%;
+  background-color: rgb(10, 80, 19);
+}
+.sky .earth .bush .bush3 {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  top: -10%;
+  left: -110%;
+  border-radius: 50%;
+  background-color: rgb(10, 80, 19);
+}
+.sky .earth .bush-one {
+  top: 65%;
+  left: 28%;
+}
+.sky .earth .bush-two {
+  top: 45%;
+  left: 35%;
+}
+.sky .earth .bush-three {
+  top: 59%;
+  left: 6%;
+}
+.sky .earth .bush-four {
+  top: 67%;
+  left: 70%;
+}
+.sky .rocket {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  background-color: #969696;
+  transform: translate(-300%, 90%);
+  z-index: 1;
+  -webkit-animation: rocket 6s linear 6s 1 forwards;
+          animation: rocket 6s linear 6s 1 forwards;
+}
+.sky .rocket .wing {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -14px;
+  bottom: 6px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #969696;
+}
+.sky .rocket .wing-right {
+  position: absolute;
+  left: 24px;
+  bottom: 6px;
+}
+.sky .rocket .shine {
+  position: absolute;
+  width: 3px;
+  height: 60px;
+  right: 4px;
+  top: 10px;
+  background-color: rgba(168, 168, 168, 0.897);
+  z-index: 1;
+}
+.sky .rocket .top {
+  position: absolute;
+  top: -50%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #969696;
+  z-index: 2;
+}
+.sky .rocket .top .shine-top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 28px solid rgba(168, 168, 168, 0.897);
+  top: 4px;
+  right: -12px;
+}
+.sky .rocket .ring {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 12px;
+  top: 12px;
+  background-color: rgba(36, 68, 247, 0.829);
+  border: 2px solid rgb(51, 49, 49);
+}
+.sky .rocket .ring-two {
+  top: 34px;
+}
+.sky .rocket .rocket-bottom {
+  position: absolute;
+  width: 30px;
+  height: 9px;
+  bottom: -9px;
+  left: 5px;
+  background-color: #7e7e7e;
+}
+.sky .rocket .fire {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -57px;
+  left: 8px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 48px solid #af4c1e;
+  z-index: 2;
+}
+.sky .rocket .fire .fire-two {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 28px;
+  left: -9px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 20px solid rgba(209, 206, 31, 0.7254901961);
+  z-index: 2;
+}
+.sky .moon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 450px;
+  top: -110px;
+  border-radius: 50%;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0px 0px 40px rgb(241, 241, 241);
+  -webkit-animation: moon 6s linear 6s 1 forwards;
+          animation: moon 6s linear 6s 1 forwards;
+}
+.sky .space-station {
+  position: absolute;
+  top: -65px;
+  left: 85%;
+  width: 360px;
+  height: 8px;
+  background-color: rgb(39, 38, 38);
+  transform: translate(-82%, -1500%) rotate(20deg);
+  -webkit-animation: station 5s linear 6s 1 forwards;
+          animation: station 5s linear 6s 1 forwards;
+  z-index: 1;
+}
+.sky .space-station .item1 {
+  position: absolute;
+  top: -25px;
+  left: 120px;
+  width: 120px;
+  height: 60px;
+  background-color: rgb(39, 38, 38);
+}
+.sky .space-station .item1 .window {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 20px;
+  top: 23px;
+  border-radius: 50%;
+  border: 2px solid rgb(68, 68, 68);
+  background-color: rgba(7, 17, 75, 0.986);
+}
+.sky .space-station .item1 .window-two {
+  left: 54px;
+}
+.sky .space-station .item1 .window-three {
+  left: 88px;
+}
+.sky .space-station .item1 .item2 {
+  position: absolute;
+  height: 160px;
+  width: 3px;
+  left: 50%;
+  top: -50px;
+  background-color: rgb(39, 38, 38);
+  transform: rotate(20deg);
+}
+.sky .space-station .item1 .item3 {
+  position: absolute;
+  height: 160px;
+  width: 3px;
+  left: 50%;
+  top: -50px;
+  background-color: rgb(39, 38, 38);
+  transform: rotate(-20deg);
+}
+.sky .space-station .wing-station {
+  position: absolute;
+  width: 4px;
+  height: 35px;
+  top: -14px;
+  background-color: rgb(44, 43, 43);
+}
+.sky .space-station .wing-station .wing-item {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  left: -13px;
+  top: -4px;
+  background-color: rgb(66, 64, 64);
+}
+.sky .space-station .wing-station .wing-item2 {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  left: -13px;
+  top: 35px;
+  background-color: rgb(66, 64, 64);
+}
+.sky .space-station .wing-station .wing-item3 {
+  position: absolute;
+  width: 15px;
+  height: 100px;
+  left: -20px;
+  top: 35px;
+  background-color: rgb(66, 64, 64);
+}
+.sky .space-station .wing-station .wing-item4 {
+  position: absolute;
+  width: 15px;
+  height: 100px;
+  left: 8px;
+  top: 35px;
+  background-color: rgb(66, 64, 64);
+}
+.sky .space-station .wing-station .wing-item5 {
+  position: absolute;
+  width: 15px;
+  height: 100px;
+  left: 8px;
+  top: -100px;
+  background-color: rgb(66, 64, 64);
+}
+.sky .space-station .wing-station .wing-item6 {
+  position: absolute;
+  width: 15px;
+  height: 100px;
+  left: -20px;
+  top: -100px;
+  background-color: rgb(66, 64, 64);
+}
+.sky .space-station .wing-two {
+  left: 70px;
+}
+.sky .space-station .wing-three {
+  left: 360px;
+}
+.sky .space-station .wing-four {
+  left: 290px;
+}
+.sky .stairs {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: -135%;
+  -webkit-animation: stairs 6s ease-in 6s 1 forwards;
+          animation: stairs 6s ease-in 6s 1 forwards;
+}
+.sky .stairs .line-one .stairs-box {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+}
+.sky .stairs .line-one .stairs-box .s1 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  background-color: rgb(241, 241, 241);
+}
+.sky .stairs .line-one .stairs-box .st1 {
+  left: 110px;
+  top: 60px;
+}
+.sky .stairs .line-one .stairs-box .st2 {
+  left: 45px;
+  top: 95px;
+}
+.sky .stairs .line-one .stairs-box .st3 {
+  left: 125px;
+  top: 125px;
+}
+.sky .stairs .line-one .stairs-box .st4 {
+  left: 43px;
+  top: 95px;
+}
+.sky .stairs .line-one .stairs-box .st5 {
+  left: 20px;
+  top: 160px;
+}
+.sky .stairs .line-one .stairs-box .st6 {
+  left: 250px;
+  top: 200px;
+}
+.sky .stairs .line-one .stairs-box .st7 {
+  left: 220px;
+  top: 150px;
+}
+.sky .stairs .line-one .stairs-box .st8 {
+  left: 350px;
+  top: 95px;
+}
+.sky .stairs .line-one .stairs-box .st9 {
+  left: 390px;
+  top: 10px;
+}
+.sky .stairs .line-one .stairs-box .st10 {
+  left: 250px;
+  top: 15px;
+}
+.sky .stairs .line-one .stairs-box .st11 {
+  left: 380px;
+  top: 230px;
+}
+.sky .stairs .line-one .stairs-box .st12 {
+  left: 420px;
+  top: 170px;
+}
+.sky .stairs .line-one .stairs-box .st13 {
+  left: 70px;
+  top: 220px;
+}
+.sky .stairs .line-one .stairs-box .st14 {
+  left: 145px;
+  top: 200px;
+}
+.sky .stairs .line-one .stairs-box .st15 {
+  left: 330px;
+  top: 170px;
+}
+.sky .stairs .line-one .stairs-box .st16 {
+  left: 230px;
+  top: 80px;
+}
+.sky .stairs .line-one .stairs-box .st17 {
+  left: 190px;
+  top: 10px;
+}
+.sky .stairs .line-one .part1 {
+  left: 25%;
+}
+.sky .stairs .line-one .part2 {
+  left: 50%;
+}
+.sky .stairs .line-one .part3 {
+  left: 75%;
+}
+.sky .stairs .line-two .stairs-box {
+  top: 25%;
+}
+.sky .stairs .line-three .stairs-box {
+  top: 50%;
+}
+.sky .stairs .line-four .stairs-box {
+  top: 75%;
+}
+.sky .stairs .line-five .stairs-box {
+  top: 100%;
+}
+.sky .stairs .star-system {
+  position: absolute;
+  width: 480px;
+  height: 300px;
+  bottom: 6%;
+  left: 40%;
+  z-index: 3;
+}
+.sky .stairs .star-system .star {
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 50%;
+  box-shadow: 0px 0px 14px rgb(241, 241, 241);
+}
+.sky .stairs .star-system .star .line-one {
+  position: absolute;
+  width: 86px;
+  height: 1px;
+  top: -16px;
+  left: 11px;
+  background-color: #fff;
+  transform: rotate(-22deg);
+}
+.sky .stairs .star-system .star1 {
+  top: 80px;
+  left: 110px;
+}
+.sky .stairs .star-system .star1 .line-two {
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  top: 16px;
+  left: 14px;
+  background-color: #fff;
+  transform: rotate(15deg);
+}
+.sky .stairs .star-system .star2 {
+  top: 105px;
+  left: 210px;
+}
+.sky .stairs .star-system .star2 .line-three {
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  top: 15px;
+  left: 14px;
+  background-color: #fff;
+  transform: rotate(13deg);
+}
+.sky .stairs .star-system .star3 {
+  top: 125px;
+  left: 300px;
+}
+.sky .stairs .star-system .star3 .line-four {
+  position: absolute;
+  width: 130px;
+  height: 1px;
+  top: -14px;
+  left: 14px;
+  background-color: #fff;
+  transform: rotate(-15deg);
+}
+.sky .stairs .star-system .star4 {
+  top: 88px;
+  left: 450px;
+}
+.sky .stairs .star-system .star4 .line-five {
+  position: absolute;
+  width: 88px;
+  height: 1px;
+  top: 58px;
+  left: -36px;
+  background-color: #fff;
+  transform: rotate(85deg);
+}
+.sky .stairs .star-system .star5 {
+  top: 200px;
+  left: 460px;
+}
+.sky .stairs .star-system .star5 .line-six {
+  position: absolute;
+  width: 93px;
+  height: 1px;
+  top: 9px;
+  left: -100px;
+  background-color: #fff;
+  transform: rotate(-5deg);
+}
+.sky .stairs .star-system .star6 {
+  top: 210px;
+  left: 345px;
+}
+.sky .stairs .star-system .star6 .line-seven {
+  position: absolute;
+  width: 74px;
+  height: 1px;
+  top: -37px;
+  left: -57px;
+  background-color: #fff;
+  transform: rotate(62deg);
+}
+.sky .earth-ball {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  bottom: -100%;
+  left: -100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 100px blue;
+  background-color: rgb(8, 23, 160);
+  -webkit-animation: earth-ball 4s linear 6s 1 forwards;
+          animation: earth-ball 4s linear 6s 1 forwards;
+}
+
+@-webkit-keyframes fly {
+  0% {
+    bottom: 0px;
+  }
+  10% {
+    bottom: -10px;
+  }
+  20% {
+    bottom: -40px;
+  }
+  30% {
+    bottom: -80px;
+  }
+  40% {
+    bottom: -120px;
+  }
+  50% {
+    bottom: -160px;
+  }
+  60% {
+    bottom: -250px;
+  }
+  70% {
+    bottom: -350px;
+  }
+  80% {
+    bottom: -500px;
+  }
+  90% {
+    bottom: -650px;
+  }
+  100% {
+    bottom: -800px;
+  }
+}
+
+@keyframes fly {
+  0% {
+    bottom: 0px;
+  }
+  10% {
+    bottom: -10px;
+  }
+  20% {
+    bottom: -40px;
+  }
+  30% {
+    bottom: -80px;
+  }
+  40% {
+    bottom: -120px;
+  }
+  50% {
+    bottom: -160px;
+  }
+  60% {
+    bottom: -250px;
+  }
+  70% {
+    bottom: -350px;
+  }
+  80% {
+    bottom: -500px;
+  }
+  90% {
+    bottom: -650px;
+  }
+  100% {
+    bottom: -800px;
+  }
+}
+@-webkit-keyframes sky-color {
+  0% {
+    background-color: royalblue;
+  }
+  40% {
+    background-color: rgb(19, 49, 138);
+  }
+  60% {
+    background-color: rgb(5, 14, 39);
+  }
+  80% {
+    background-color: rgb(4, 11, 34);
+  }
+  100% {
+    background-color: rgb(1, 3, 8);
+  }
+}
+@keyframes sky-color {
+  0% {
+    background-color: royalblue;
+  }
+  40% {
+    background-color: rgb(19, 49, 138);
+  }
+  60% {
+    background-color: rgb(5, 14, 39);
+  }
+  80% {
+    background-color: rgb(4, 11, 34);
+  }
+  100% {
+    background-color: rgb(1, 3, 8);
+  }
+}
+@-webkit-keyframes moon {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: 40px;
+    width: 95px;
+    height: 95px;
+  }
+  40% {
+    top: 80px;
+    width: 90px;
+    height: 90px;
+  }
+  50% {
+    top: 120px;
+    width: 85px;
+    height: 85px;
+  }
+  60% {
+    top: 160px;
+    width: 80px;
+    height: 80px;
+  }
+  60% {
+    top: 200px;
+    width: 75px;
+    height: 75px;
+  }
+  60% {
+    top: 240px;
+    width: 70px;
+    height: 70px;
+  }
+  70% {
+    top: 320px;
+    width: 65px;
+    height: 65px;
+  }
+  80% {
+    top: 380px;
+    width: 60px;
+    height: 60px;
+  }
+  90% {
+    top: 440px;
+    width: 55px;
+    height: 55px;
+  }
+  100% {
+    top: 470px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@keyframes moon {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: 40px;
+    width: 95px;
+    height: 95px;
+  }
+  40% {
+    top: 80px;
+    width: 90px;
+    height: 90px;
+  }
+  50% {
+    top: 120px;
+    width: 85px;
+    height: 85px;
+  }
+  60% {
+    top: 160px;
+    width: 80px;
+    height: 80px;
+  }
+  60% {
+    top: 200px;
+    width: 75px;
+    height: 75px;
+  }
+  60% {
+    top: 240px;
+    width: 70px;
+    height: 70px;
+  }
+  70% {
+    top: 320px;
+    width: 65px;
+    height: 65px;
+  }
+  80% {
+    top: 380px;
+    width: 60px;
+    height: 60px;
+  }
+  90% {
+    top: 440px;
+    width: 55px;
+    height: 55px;
+  }
+  100% {
+    top: 470px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@-webkit-keyframes station {
+  20% {
+    top: 40px;
+  }
+  40% {
+    top: 80px;
+  }
+  60% {
+    top: 120px;
+  }
+  80% {
+    top: 250px;
+  }
+  100% {
+    top: 340px;
+  }
+}
+@keyframes station {
+  20% {
+    top: 40px;
+  }
+  40% {
+    top: 80px;
+  }
+  60% {
+    top: 120px;
+  }
+  80% {
+    top: 250px;
+  }
+  100% {
+    top: 340px;
+  }
+}
+@-webkit-keyframes rocket {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 75%;
+    transform: rotate(20deg);
+  }
+}
+@keyframes rocket {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 75%;
+    transform: rotate(20deg);
+  }
+}
+@-webkit-keyframes stairs {
+  from {
+    top: -75%;
+  }
+  to {
+    top: 0%;
+  }
+}
+@keyframes stairs {
+  from {
+    top: -75%;
+  }
+  to {
+    top: 0%;
+  }
+}
+@-webkit-keyframes earth-ball {
+  from {
+    bottom: -50%;
+    left: -70%;
+  }
+  to {
+    bottom: -18%;
+    left: -22%;
+  }
+}
+@keyframes earth-ball {
+  from {
+    bottom: -50%;
+    left: -70%;
+  }
+  to {
+    bottom: -18%;
+    left: -22%;
+  }
+}
+@-webkit-keyframes refresh {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 10%;
+  }
+}
+@keyframes refresh {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 10%;
+  }
+}
+@-webkit-keyframes start-text {
+  from {
+    top: -50%;
+  }
+  to {
+    top: 10%;
+  }
+}
+@keyframes start-text {
+  from {
+    top: -50%;
+  }
+  to {
+    top: 10%;
+  }
+}/*# sourceMappingURL=style.css.map */

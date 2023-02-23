@@ -1,0 +1,1087 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: hidden;
+	font-size: 20px;
+	font-family: 'Quantico', sans-serif;
+}
+
+.sky {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	background-color: royalblue;
+	animation: sky-color 6s linear 4s 1 forwards;
+
+	.text-inform {
+		position: absolute;
+		left: 1%;
+		top: 1%;
+		color: rgb(207, 207, 207);
+	}
+
+	.text-inform::after {
+		content: 'only for full screen desktop';
+	}
+
+	.text-refresh {
+		position: absolute;
+		bottom: 10%;
+		right: -20%;
+		font-size: 30px;
+		color: rgb(207, 207, 207);
+		animation: refresh 1s linear 14s 1 forwards;
+		z-index: 3;
+	}
+
+	.text-refresh::after {
+		content: 'refresh to restart';
+	}
+
+	.start {
+		position: absolute;
+		top: -50%;
+		left: 23%;
+		font-size: 38px;
+		color: rgb(207, 207, 207);
+		animation: start-text 1s linear 11s 1 forwards;
+		z-index: 2;
+
+		span {
+			color: royalblue;
+			font-size: 120px;
+		}
+	}
+
+	.earth {
+		position: absolute;
+		bottom: 0px;
+		height: 400px;
+		width: 100vw;
+		background-color: green;
+		animation: fly 3s linear 4s 1 forwards;
+
+		.cloud {
+			position: absolute;
+			width: 140px;
+			height: 80px;
+			top: -70%;
+			left: 87%;
+			border-radius: 50%;
+			background-color: rgb(255, 255, 255);
+
+			.cloud2 {
+				position: absolute;
+				width: 160px;
+				height: 100px;
+				top: 0%;
+				left: -60%;
+				border-radius: 50%;
+				background-color: rgb(255, 255, 255);
+			}
+
+			.cloud3 {
+				position: absolute;
+				width: 100px;
+				height: 80px;
+				top: 20%;
+				left: -90%;
+				border-radius: 50%;
+				background-color: rgb(255, 255, 255);
+			}
+		}
+
+		.cloud-two {
+			top: -60%;
+			left: 10%;
+		}
+
+		.cloud-three {
+			top: -55%;
+			left: 25%;
+		}
+
+		.cloud-four {
+			top: -65%;
+			left: 70%;
+		}
+
+		.sun {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			right: 35%;
+			top: -85%;
+			box-shadow: 0px 0px 50px rgb(250, 235, 26);
+			background-color: rgb(250, 235, 26);
+		}
+
+		.house {
+			position: absolute;
+			width: 120px;
+			height: 60px;
+			right: 25%;
+			top: 20%;
+			background-color: rgba(216, 216, 216, 0.87);
+
+			.window {
+				position: absolute;
+				width: 20px;
+				height: 18px;
+				background-color: rgba(14, 118, 255, 0.829);
+				border: 2px solid rgb(255, 255, 255);
+			}
+
+			.perpendicularly {
+				position: absolute;
+				width: 2px;
+				height: 100%;
+				left: 45%;
+				background-color: rgb(255, 255, 255);
+			}
+
+			.horizontally {
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				top: 45%;
+				background-color: rgb(255, 255, 255);
+			}
+
+			.one {
+				position: absolute;
+				bottom: 16px;
+				left: 15px;
+			}
+
+			.two {
+				position: absolute;
+				bottom: 16px;
+				right: 15px;
+			}
+
+			.door {
+				position: absolute;
+				bottom: 0px;
+				left: 50px;
+				width: 24px;
+				height: 45px;
+				background-color: rgb(80, 36, 36);
+				border: 2px solid rgb(43, 43, 43);
+
+				.handle {
+					position: absolute;
+					height: 2px;
+					width: 5px;
+					background-color: rgb(214, 214, 214);
+					top: 50%;
+				}
+			}
+
+			.roof {
+				position: absolute;
+				width: 120px;
+				height: 30px;
+				top: -25px;
+				background-color: rgb(207, 0, 0);
+
+				.himney {
+					position: absolute;
+					width: 10px;
+					height: 20px;
+					right: 20px;
+					top: -5px;
+					background-color: rgba(0, 0, 0, 0.877);
+				}
+
+				.himney::after {
+					content: '';
+					position: absolute;
+					background-color: rgb(0, 0, 0);
+					width: 14px;
+					height: 4px;
+					left: -2px;
+					top: -4px;
+				}
+			}
+		}
+
+		.house2 {
+			left: 5%;
+			top: -5%;
+		}
+
+		.house3 {
+			left: 85%;
+			top: -5%;
+		}
+
+		.house4 {
+			left: 15%;
+			top: 50%;
+		}
+
+		.house5 {
+			left: 97%;
+			top: 50%;
+		}
+
+		.house6 {
+			left: -2%;
+			top: 35%;
+		}
+
+		.lake {
+			position: absolute;
+			width: 180px;
+			height: 80px;
+			right: 35%;
+			bottom: 25%;
+			border-radius: 50%;
+			background-color: rgb(12, 145, 253);
+		}
+
+		.road {
+			position: absolute;
+			width: 100vw;
+			height: 60px;
+			bottom: 5%;
+			background-color: rgb(59, 58, 58);
+
+			.lane {
+				position: absolute;
+				width: 100vw;
+				height: 1px;
+				top: 48%;
+				background-color: #fff;
+			}
+
+			.lane2 {
+				top: 53%;
+			}
+		}
+
+		.three {
+			position: absolute;
+			width: 10px;
+			height: 40px;
+			top: 42%;
+			left: 63%;
+			background-color: rgb(92, 59, 59);
+		}
+
+		.three::after {
+			content: '';
+			position: absolute;
+			width: 40px;
+			height: 55px;
+			top: -45px;
+			left: -14px;
+			border-radius: 50%;
+			background-color: rgb(16, 75, 14);
+		}
+
+		.three1 {
+			top: 38%;
+			left: 60%;
+		}
+
+		.three2 {
+			top: 45%;
+			left: 55%;
+		}
+
+		.three3 {
+			top: 60%;
+			left: 80%;
+		}
+
+		.three4 {
+			top: 54%;
+			left: 85%;
+		}
+
+		.three5 {
+			top: 5%;
+			left: 95%;
+		}
+
+		.three6 {
+			top: 2%;
+			left: 62%;
+		}
+
+		.three7 {
+			top: 20%;
+			left: 25%;
+		}
+
+		.three8 {
+			top: 15%;
+			left: 20%;
+		}
+
+		.three9 {
+			top: 25%;
+			left: 22%;
+		}
+
+		.three10 {
+			top: 38%;
+			left: 12%;
+		}
+
+		.three11 {
+			top: 30%;
+			left: 9%;
+		}
+
+		.bush {
+			position: absolute;
+			width: 50px;
+			height: 35px;
+			top: 60%;
+			left: 50%;
+			border-radius: 50%;
+			background-color: rgb(10, 80, 19);
+
+			.bush2 {
+				position: absolute;
+				width: 50px;
+				height: 49px;
+				top: -40%;
+				left: -50%;
+				border-radius: 50%;
+				background-color: rgb(10, 80, 19);
+			}
+
+			.bush3 {
+				position: absolute;
+				width: 50px;
+				height: 40px;
+				top: -10%;
+				left: -110%;
+				border-radius: 50%;
+				background-color: rgb(10, 80, 19);
+			}
+		}
+
+		.bush-one {
+			top: 65%;
+			left: 28%;
+		}
+
+		.bush-two {
+			top: 45%;
+			left: 35%;
+		}
+
+		.bush-three {
+			top: 59%;
+			left: 6%;
+		}
+
+		.bush-four {
+			top: 67%;
+			left: 70%;
+		}
+	}
+
+	.rocket {
+		position: absolute;
+		width: 40px;
+		height: 80px;
+		top: 50%;
+		left: 50%;
+		background-color: #969696;
+		transform: translate(-300%, 90%);
+		z-index: 1;
+		animation: rocket 6s linear 6s 1 forwards;
+
+		.wing {
+			position: absolute;
+			width: 0;
+			height: 0;
+			left: -14px;
+			bottom: 6px;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-bottom: 30px solid #969696;
+		}
+
+		.wing-right {
+			position: absolute;
+			left: 24px;
+			bottom: 6px;
+		}
+
+		.shine {
+			position: absolute;
+			width: 3px;
+			height: 60px;
+			right: 4px;
+			top: 10px;
+			background-color: rgba(168, 168, 168, 0.897);
+			z-index: 1;
+		}
+
+		.top {
+			position: absolute;
+			top: -50%;
+			width: 0;
+			height: 0;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-bottom: 40px solid #969696;
+			z-index: 2;
+
+			.shine-top {
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-left: 0px solid transparent;
+				border-right: 12px solid transparent;
+				border-bottom: 28px solid rgba(168, 168, 168, 0.897);
+				top: 4px;
+				right: -12px;
+			}
+		}
+
+		.ring {
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			left: 12px;
+			top: 12px;
+			background-color: rgba(36, 68, 247, 0.829);
+			border: 2px solid rgb(51, 49, 49);
+		}
+
+		.ring-two {
+			top: 34px;
+		}
+
+		.rocket-bottom {
+			position: absolute;
+			width: 30px;
+			height: 9px;
+			bottom: -9px;
+			left: 5px;
+			background-color: #7e7e7e;
+		}
+
+		.fire {
+			position: absolute;
+			width: 0;
+			height: 0;
+			bottom: -57px;
+			left: 8px;
+			border-left: 12px solid transparent;
+			border-right: 12px solid transparent;
+			border-top: 48px solid #af4c1e;
+			z-index: 2;
+
+			.fire-two {
+				position: absolute;
+				width: 0;
+				height: 0;
+				bottom: 28px;
+				left: -9px;
+				border-left: 9px solid transparent;
+				border-right: 9px solid transparent;
+				border-top: 20px solid #d1ce1fb9;
+				z-index: 2;
+			}
+		}
+	}
+
+	.moon {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		left: 450px;
+		top: -110px;
+		border-radius: 50%;
+		background-color: rgb(241, 241, 241);
+		box-shadow: 0px 0px 40px rgb(241, 241, 241);
+		animation: moon 6s linear 6s 1 forwards;
+	}
+
+	.space-station {
+		position: absolute;
+		top: -65px;
+		left: 85%;
+		width: 360px;
+		height: 8px;
+		background-color: rgb(39, 38, 38);
+		transform: translate(-82%, -1500%) rotate(20deg);
+		animation: station 5s linear 6s 1 forwards;
+		z-index: 1;
+
+		.item1 {
+			position: absolute;
+			top: -25px;
+			left: 120px;
+			width: 120px;
+			height: 60px;
+			background-color: rgb(39, 38, 38);
+
+			.window {
+				position: absolute;
+				width: 15px;
+				height: 15px;
+				left: 20px;
+				top: 23px;
+				border-radius: 50%;
+				border: 2px solid rgb(68, 68, 68);
+				background-color: rgba(7, 17, 75, 0.986);
+			}
+
+			.window-two {
+				left: 54px;
+			}
+
+			.window-three {
+				left: 88px;
+			}
+
+			.item2 {
+				position: absolute;
+				height: 160px;
+				width: 3px;
+				left: 50%;
+				top: -50px;
+				background-color: rgb(39, 38, 38);
+				transform: rotate(20deg);
+			}
+
+			.item3 {
+				position: absolute;
+				height: 160px;
+				width: 3px;
+				left: 50%;
+				top: -50px;
+				background-color: rgb(39, 38, 38);
+				transform: rotate(-20deg);
+			}
+		}
+
+		.wing-station {
+			position: absolute;
+			width: 4px;
+			height: 35px;
+			top: -14px;
+			background-color: rgb(44, 43, 43);
+
+			.wing-item {
+				position: absolute;
+				width: 30px;
+				height: 4px;
+				left: -13px;
+				top: -4px;
+				background-color: rgb(66, 64, 64);
+			}
+
+			.wing-item2 {
+				position: absolute;
+				width: 30px;
+				height: 4px;
+				left: -13px;
+				top: 35px;
+				background-color: rgb(66, 64, 64);
+			}
+
+			.wing-item3 {
+				position: absolute;
+				width: 15px;
+				height: 100px;
+				left: -20px;
+				top: 35px;
+				background-color: rgb(66, 64, 64);
+			}
+
+			.wing-item4 {
+				position: absolute;
+				width: 15px;
+				height: 100px;
+				left: 8px;
+				top: 35px;
+				background-color: rgb(66, 64, 64);
+			}
+
+			.wing-item5 {
+				position: absolute;
+				width: 15px;
+				height: 100px;
+				left: 8px;
+				top: -100px;
+				background-color: rgb(66, 64, 64);
+			}
+
+			.wing-item6 {
+				position: absolute;
+				width: 15px;
+				height: 100px;
+				left: -20px;
+				top: -100px;
+				background-color: rgb(66, 64, 64);
+			}
+		}
+
+		.wing-two {
+			left: 70px;
+		}
+
+		.wing-three {
+			left: 360px;
+		}
+
+		.wing-four {
+			left: 290px;
+		}
+	}
+
+	.stairs {
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		top: -135%;
+		animation: stairs 6s ease-in 6s 1 forwards;
+
+		.line-one {
+			.stairs-box {
+				position: absolute;
+				width: 25%;
+				height: 25%;
+
+				.s1 {
+					position: absolute;
+					width: 2px;
+					height: 2px;
+					left: 10px;
+					top: 10px;
+					border-radius: 50%;
+					background-color: rgb(241, 241, 241);
+				}
+
+				.st1 {
+					left: 110px;
+					top: 60px;
+				}
+				.st2 {
+					left: 45px;
+					top: 95px;
+				}
+				.st3 {
+					left: 125px;
+					top: 125px;
+				}
+				.st4 {
+					left: 43px;
+					top: 95px;
+				}
+				.st5 {
+					left: 20px;
+					top: 160px;
+				}
+				.st6 {
+					left: 250px;
+					top: 200px;
+				}
+				.st7 {
+					left: 220px;
+					top: 150px;
+				}
+				.st8 {
+					left: 350px;
+					top: 95px;
+				}
+				.st9 {
+					left: 390px;
+					top: 10px;
+				}
+				.st10 {
+					left: 250px;
+					top: 15px;
+				}
+				.st11 {
+					left: 380px;
+					top: 230px;
+				}
+				.st12 {
+					left: 420px;
+					top: 170px;
+				}
+				.st13 {
+					left: 70px;
+					top: 220px;
+				}
+				.st14 {
+					left: 145px;
+					top: 200px;
+				}
+				.st15 {
+					left: 330px;
+					top: 170px;
+				}
+				.st16 {
+					left: 230px;
+					top: 80px;
+				}
+				.st17 {
+					left: 190px;
+					top: 10px;
+				}
+			}
+
+			.part1 {
+				left: 25%;
+			}
+
+			.part2 {
+				left: 50%;
+			}
+
+			.part3 {
+				left: 75%;
+			}
+		}
+
+		.line-two {
+			.stairs-box {
+				top: 25%;
+			}
+		}
+
+		.line-three {
+			.stairs-box {
+				top: 50%;
+			}
+		}
+
+		.line-four {
+			.stairs-box {
+				top: 75%;
+			}
+		}
+
+		.line-five {
+			.stairs-box {
+				top: 100%;
+			}
+		}
+
+		.star-system {
+			position: absolute;
+			width: 480px;
+			height: 300px;
+			bottom: 6%;
+			left: 40%;
+			z-index: 3;
+
+			.star {
+				position: absolute;
+				top: 120px;
+				left: 10px;
+				width: 8px;
+				height: 8px;
+				background-color: rgb(241, 241, 241);
+				border-radius: 50%;
+				box-shadow: 0px 0px 14px rgb(241, 241, 241);
+
+				.line-one {
+					position: absolute;
+					width: 86px;
+					height: 1px;
+					top: -16px;
+					left: 11px;
+					background-color: #fff;
+					transform: rotate(-22deg);
+				}
+			}
+
+			.star1 {
+				top: 80px;
+				left: 110px;
+
+				.line-two {
+					position: absolute;
+					width: 80px;
+					height: 1px;
+					top: 16px;
+					left: 14px;
+					background-color: #fff;
+					transform: rotate(15deg);
+				}
+			}
+
+			.star2 {
+				top: 105px;
+				left: 210px;
+
+				.line-three {
+					position: absolute;
+					width: 70px;
+					height: 1px;
+					top: 15px;
+					left: 14px;
+					background-color: #fff;
+					transform: rotate(13deg);
+				}
+			}
+
+			.star3 {
+				top: 125px;
+				left: 300px;
+
+				.line-four {
+					position: absolute;
+					width: 130px;
+					height: 1px;
+					top: -14px;
+					left: 14px;
+					background-color: #fff;
+					transform: rotate(-15deg);
+				}
+			}
+
+			.star4 {
+				top: 88px;
+				left: 450px;
+
+				.line-five {
+					position: absolute;
+					width: 88px;
+					height: 1px;
+					top: 58px;
+					left: -36px;
+					background-color: #fff;
+					transform: rotate(85deg);
+				}
+			}
+
+			.star5 {
+				top: 200px;
+				left: 460px;
+
+				.line-six {
+					position: absolute;
+					width: 93px;
+					height: 1px;
+					top: 9px;
+					left: -100px;
+					background-color: #fff;
+					transform: rotate(-5deg);
+				}
+			}
+			.star6 {
+				top: 210px;
+				left: 345px;
+
+				.line-seven {
+					position: absolute;
+					width: 74px;
+					height: 1px;
+					top: -37px;
+					left: -57px;
+					background-color: #fff;
+					transform: rotate(62deg);
+				}
+			}
+		}
+	}
+
+	.earth-ball {
+		position: absolute;
+		width: 700px;
+		height: 700px;
+		bottom: -100%;
+		left: -100%;
+		border-radius: 50%;
+		box-shadow: 0px 0px 100px blue;
+		background-color: rgb(8, 23, 160);
+		animation: earth-ball 4s linear 6s 1 forwards;
+	}
+}
+
+@keyframes fly {
+	0% {
+		bottom: 0px;
+	}
+	10% {
+		bottom: -10px;
+	}
+	20% {
+		bottom: -40px;
+	}
+	30% {
+		bottom: -80px;
+	}
+	40% {
+		bottom: -120px;
+	}
+	50% {
+		bottom: -160px;
+	}
+	60% {
+		bottom: -250px;
+	}
+	70% {
+		bottom: -350px;
+	}
+	80% {
+		bottom: -500px;
+	}
+	90% {
+		bottom: -650px;
+	}
+	100% {
+		bottom: -800px;
+	}
+}
+
+@keyframes sky-color {
+	0% {
+		background-color: royalblue;
+	}
+	40% {
+		background-color: rgb(19, 49, 138);
+	}
+	60% {
+		background-color: rgb(5, 14, 39);
+	}
+	80% {
+		background-color: rgb(4, 11, 34);
+	}
+	100% {
+		background-color: rgb(1, 3, 8);
+	}
+}
+
+@keyframes moon {
+	0% {
+		top: 0px;
+	}
+	20% {
+		top: 40px;
+		width: 95px;
+		height: 95px;
+	}
+	40% {
+		top: 80px;
+		width: 90px;
+		height: 90px;
+	}
+	50% {
+		top: 120px;
+		width: 85px;
+		height: 85px;
+	}
+	60% {
+		top: 160px;
+		width: 80px;
+		height: 80px;
+	}
+	60% {
+		top: 200px;
+		width: 75px;
+		height: 75px;
+	}
+	60% {
+		top: 240px;
+		width: 70px;
+		height: 70px;
+	}
+	70% {
+		top: 320px;
+		width: 65px;
+		height: 65px;
+	}
+	80% {
+		top: 380px;
+		width: 60px;
+		height: 60px;
+	}
+	90% {
+		top: 440px;
+		width: 55px;
+		height: 55px;
+	}
+	100% {
+		top: 470px;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@keyframes station {
+	20% {
+		top: 40px;
+	}
+	40% {
+		top: 80px;
+	}
+	60% {
+		top: 120px;
+	}
+	80% {
+		top: 250px;
+	}
+	100% {
+		top: 340px;
+	}
+}
+
+@keyframes rocket {
+	from {
+		left: 50%;
+	}
+	to {
+		left: 75%;
+		transform: rotate(20deg);
+	}
+}
+
+@keyframes stairs {
+	from {
+		top: -75%;
+	}
+	to {
+		top: 0%;
+	}
+}
+
+@keyframes earth-ball {
+	from {
+		bottom: -50%;
+		left: -70%;
+	}
+	to {
+		bottom: -18%;
+		left: -22%;
+	}
+}
+
+@keyframes refresh {
+	from {
+		right: -10%;
+	}
+	to {
+		right: 10%;
+	}
+}
+
+@keyframes start-text {
+	from {
+		top: -50%;
+	}
+	to {
+		top: 10%;
+	}
+}
